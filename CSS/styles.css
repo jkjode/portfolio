@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Russo;
+    src: url(/Fonts/Russo_One/RussoOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Cormorant;
+    src: url(/Fonts/Cormorant/Cormorant-VariableFont_wght.ttf);
+}
+
+header {
+    width: 100%;
+    height: 350px;
+    bottom: 2rem;
+    top: 2rem;
+}
+
+#logo {
+    top: 2rem;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    object-fit: cover;
+    margin-left: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.card {
+    object-fit: fill;
+    margin: 0 auto;
+}
+
+.pagepreview {
+    width: 35rem;
+}
+
+h1 {
+    font-family: Russo;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: xx-large;
+}
+
+p { 
+    font-family: Cormorant;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+a {
+    font-family: Cormorant;
+    text-decoration: none;
+}
+
+footer {
+    font-family: Russo;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
