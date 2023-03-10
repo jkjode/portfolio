@@ -27,7 +27,8 @@ header {
 
 .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-rows: 1fr;
     gap: 2rem;
     object-fit: cover;
     margin-left: 3rem;
