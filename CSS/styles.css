@@ -18,6 +18,14 @@ header {
     height: 350px;
     bottom: 2rem;
     top: 2rem;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-family: Russo;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: -6em;
 }
 
 #logo {
@@ -27,22 +35,43 @@ header {
 
 .cards {
     display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-rows: 1fr;
     gap: 2rem;
     object-fit: cover;
-    margin-left: 3rem;
-    margin-top: 5rem;
+    margin-top: 10rem;
     margin-bottom: 5rem;
 }
 
 .card {
-    object-fit: fill;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    width: 35rem;
+    height: fit-content;
+    object-fit: cover;
     margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 5rem;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
 }
 
 .pagepreview {
     width: 35rem;
+}
+
+.description {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 3rem;
 }
 
 h1 {
@@ -52,15 +81,39 @@ h1 {
     font-size: xx-large;
 }
 
+h2, h3 {
+    font-family: Russo;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 5rem;
+}
+
 p { 
     font-family: Cormorant;
-    width: 50vw;
+    font-size: x-large;
     margin: 0 auto;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;    
 }
 
 a {
-    font-family: Cormorant;
+    color: black;
+    font-family: Russo;
     text-decoration: none;
+    font-size: large;
+    margin-bottom: 1rem;
+}
+
+a:hover {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 footer {
@@ -68,4 +121,43 @@ footer {
     margin-top: 5rem;
     margin-bottom: 1rem;
     text-align: center;
+}
+
+@media (max-width: 750px) {
+    
+    header {
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: large;
+    }
+
+    #logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    h2, h3 {
+        font-size: large;
+        margin-top: 1rem;
+    }
+
+    .pagepreview {
+        width: 15rem
+    }
+
+    a {
+        font-size: medium;
+    }
+
+    p {
+        font-size: large;
+        margin-top: 0;
+    }
+
+    .card {
+        width: 15rem;
+        height: 25rem;
+    }
 }
