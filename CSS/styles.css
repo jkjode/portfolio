@@ -59,8 +59,8 @@ header h1 {
 
 .card:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
+    transform: scale(1.03);
+    transition: all 0.2s ease-in-out;
 }
 
 .pagepreview {
